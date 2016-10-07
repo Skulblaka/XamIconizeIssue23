@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iconize="clr-namespace:FormsPlugin.Iconize;assembly=FormsPlugin.Iconize"
+             x:Class="XamIconizeIssue23.MainPage"
+  Title="Xam.Plugin.Iconize Issue #23">
+
+  <ContentPage.ToolbarItems>
+    <iconize:IconToolbarItem Icon="fa-android" />
+    <!-- this line causes the exception, even when using a regular ToolbarItem anstead of an IconToolbarItem -->
+  </ContentPage.ToolbarItems>
+
+  <StackLayout VerticalOptions="Center">
+    <Label HorizontalTextAlignment="Center" Text="Welcome to Xamarin Forms!"/>
+    <iconize:IconLabel HorizontalTextAlignment="Center" Text="fa-android" FontSize="64" />
+  </StackLayout>
+</ContentPage>

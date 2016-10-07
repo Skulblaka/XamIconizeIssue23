@@ -1,0 +1,1 @@
+A small demo project to reproduce the exception mentioned in [Xam.Plugin.Iconize Issue #23](https://github.com/jsmarcus/Xamarin.Plugins/issues/23)
