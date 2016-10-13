@@ -15,7 +15,7 @@ namespace XamIconizeIssue23.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            FormsPlugin.Iconize.Droid.IconControls.Init();
+            FormsPlugin.Iconize.Droid.IconControls.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
             LoadApplication(new App());
         }
     }
